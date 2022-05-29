@@ -30,8 +30,7 @@
       $color-primary-dark
     );
     z-index: 1000;
-    // transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
-    transition: transform 0.8s;
+    transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
 
     // transform: scale(80);
   }
@@ -43,10 +42,9 @@
     left: 0;
     z-index: 2000;
 
-    width: 100%;
+    width: 0;
     opacity: 0;
-    // transition: opacity 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-    transition: opacity 0.6s;
+    transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
 
   &__list {
@@ -99,6 +97,7 @@
   }
 
   &__checkbox:checked ~ &__nav {
+    width: 100%;
     opacity: 1;
   }
 

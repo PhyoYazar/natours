@@ -564,7 +564,7 @@ body {
   right: 6.5rem;
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
-  transition: transform 0.8s; }
+  transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1); }
 
 .navigation__nav {
   height: 100vh;
@@ -572,9 +572,9 @@ body {
   top: 0;
   left: 0;
   z-index: 2000;
-  width: 100%;
+  width: 0;
   opacity: 0;
-  transition: opacity 0.6s; }
+  transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
 
 .navigation__list {
   position: absolute;
@@ -611,6 +611,7 @@ body {
   transform: scale(80); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
+  width: 100%;
   opacity: 1; }
 
 .navigation__icon {
