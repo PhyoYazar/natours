@@ -124,20 +124,20 @@
     }
 
     &::before {
-      top: -0.7rem;
+      top: -1rem;
       // transform-origin: right;
     }
 
     &::after {
-      top: 0.8rem;
+      top: 0.9rem;
     }
   }
 
   &__button:hover &__icon::before {
-    top: -1rem;
+    top: -1.2rem;
   }
   &__button:hover &__icon::after {
-    top: 1rem;
+    top: 1.2rem;
   }
 
   &__checkbox:checked + &__button &__icon {
